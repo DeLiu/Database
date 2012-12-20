@@ -64,3 +64,11 @@ insert into Employee (person_id, initials, position_id, salaryrate_id, working_h
 	values (03, 'JS', 03, 03, 45, 'd255d6e14e349b46a8d5b0916a5bd4923401af60'); -- salt: JS, Password: RoseTyler, pepper: Derp
 
 select * from Employee;
+
+
+insert into Tutor (employee_id, number_of_classes, experience)
+	values(02, 6, 8);
+
+select * from Tutor;
+
+
