@@ -82,7 +82,7 @@ create table Course (
 	id int primary key not null,
 	index (id),
 	course_type_id int,
-	foreign key (course_type_id) references CourseType(id),
+	foreign key (course_type_id) references Course_Type(id),
 	name varchar(50),
 	price double,
 	difficulty int
