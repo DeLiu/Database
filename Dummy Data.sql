@@ -52,3 +52,14 @@ insert into Salaryrate (id, hourly_wage, required_class, required_hours, require
 	values(03, 150.00, 0, 40 , 3);
 
 select * from Salaryrate;
+
+insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
+	values (01, 'NE', 01, 01, 42, '46ecbdea62dfd3e928936f68f670e18df2b4f221'); -- salt: NE, Password: Minecraft, pepper: Derp
+
+insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
+	values (02, 'PJ', 02, 02, 40, 'e5589c427f77c78cbcf9423f852ec3191945d41f'); -- salt: PJ, Password: PaJamas, pepper: Derp
+
+insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
+	values (03, 'JS', 03, 03, 45, 'd255d6e14e349b46a8d5b0916a5bd4923401af60'); -- salt: JS, Password: RoseTyler, pepper: Derp
+
+select * from Employee;
