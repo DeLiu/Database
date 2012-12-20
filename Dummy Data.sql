@@ -49,9 +49,10 @@ insert into Salaryrate (id, hourly_wage, required_class, required_hours, require
 	values(02, 107.25, 5, 45, 4);
 
 insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
-	values(03, 150.00, 0, 40 , 3);
+	values(03, 150.00, 0, 40, 3);
 
 select * from Salaryrate;
+
 
 insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
 	values (01, 'NE', 01, 01, 42, '46ecbdea62dfd3e928936f68f670e18df2b4f221'); -- salt: NE, Password: Minecraft, pepper: Derp
