@@ -43,4 +43,12 @@ select * from Employee_Position;
 
 
 insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
-	values(01, 100.00, 
+	values(01, 100.00, 0, 40, 2);
+
+insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
+	values(02, 107.25, 5, 45, 4);
+
+insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
+	values(03, 150.00, 0, 40 , 3);
+
+select * from Salaryrate;
