@@ -212,14 +212,21 @@ insert into Participant_Invoiceline (participant_invoice_id, course_id, subtotal
 	
 	
 insert into Class_Invoice (id, class_id, total, paid)
-	values (01, 03, 250.00, true);
+	values (01, 03, 200.00, true);
 	
 insert into Class_Invoice (id, class_id, total, paid)
 	values (02, 02, 230.50, false);
 	
 insert into Class_Invoice (id, class_id, total, paid)
-	values (03, 01, 200.00, true);
+	values (03, 01, 250.00, true);
 	
 	
+insert into table Class_Ivoiceline (class_invoice_id, participant_id, subtotal)
+	values (01, 06, 200.00);
 	
+insert into table Class_Ivoiceline (class_invoice_id, participant_id, subtotal)
+	values (02, 05, 230.50);
+	
+insert into table Class_Ivoiceline (class_invoice_id, participant_id, subtotal)
+	values (03, 04, 250.00);
 	
