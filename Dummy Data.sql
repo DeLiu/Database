@@ -72,3 +72,39 @@ insert into Tutor (employee_id, number_of_classes, experience)
 select * from Tutor;
 
 
+insert into Tutor_Qualification (tutor_id, qualification)
+	values(02, 'matematik');
+
+insert into Tutor_Qualification (tutor_id, qualification)
+	values(02, 'dansk 2');
+
+insert into Tutor_Qualification (tutor_id, qualification)
+	values(02, 'geografi');
+
+select * from Tutor_Qualification;
+
+
+insert into Course_Type (id, name)
+	values (01, 'dansk 1');
+
+insert into Course_Type (id, name)
+	values (02, 'matematik');
+
+insert into Course_Type (id, name)
+	values (03, 'spansk 3');
+
+select * from Course_Type;
+
+
+insert into Course (id, course_type_id, name, price, difficulty)
+	values (01, 02, 'Grundlæggende Matematik', 250.00, 1);
+
+insert into Course (id, course_type_id, name, price, difficulty)
+	values (02, 03, 'Spansk 3', 230.50, 3);
+
+insert into Course (id, course_type_id, name, price, difficulty)
+	values (03, 01, 'Dansk 1', 200.00, 1);
+
+select * from Course;
+
+
