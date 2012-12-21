@@ -16,8 +16,6 @@ insert into Person (id, cpr, firstname, lastname, street, house_number, postal, 
 insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
 	values (06, 2010280055, 'Sofie', 'Uglemose', 'Herpvej', 38, 7100, 'Vejle');
 
-select * from Person;
-
 
 insert into Person_Phone (person_id, phone)
 	values (01, 20811393);
@@ -36,8 +34,6 @@ insert into Person_Phone (person_id, phone)
 
 insert into Person_Phone (person_id, phone)
 	values (06, 76887942);
-
-select * from Person_Phone;
 
 
 insert into Person_Email (person_id, email)
@@ -58,8 +54,6 @@ insert into Person_Email (person_id, email)
 insert into Person_Email (person_id, email)
 	values (06, 'sofie43556@gmail.com');
 
-select * from Person_Email;
-
 
 insert into Employee_Position (id, name)
 	values (01, 'office assistant');
@@ -69,8 +63,6 @@ insert into Employee_Position (id, name)
 
 insert into Employee_Position (id, name)
 	values (03, 'principal');
-
-select * from Employee_Position;
 
 
 insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
@@ -82,8 +74,6 @@ insert into Salaryrate (id, hourly_wage, required_class, required_hours, require
 insert into Salaryrate (id, hourly_wage, required_class, required_hours, required_experience)
 	values(03, 150.00, 0, 40, 3);
 
-select * from Salaryrate;
-
 
 insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
 	values (01, 'NE', 01, 01, 42, '46ecbdea62dfd3e928936f68f670e18df2b4f221'); -- salt: NE, Password: Minecraft, pepper: Derp
@@ -94,13 +84,9 @@ insert into Employee (person_id, initials, position_id, salaryrate_id, working_h
 insert into Employee (person_id, initials, position_id, salaryrate_id, working_hours, accessword)
 	values (03, 'JS', 03, 03, 45, 'd255d6e14e349b46a8d5b0916a5bd4923401af60'); -- salt: JS, Password: RoseTyler, pepper: Derp
 
-select * from Employee;
-
 
 insert into Tutor (employee_id, number_of_classes, experience)
 	values(02, 6, 8);
-
-select * from Tutor;
 
 
 insert into Tutor_Qualification (tutor_id, qualification)
@@ -112,8 +98,6 @@ insert into Tutor_Qualification (tutor_id, qualification)
 insert into Tutor_Qualification (tutor_id, qualification)
 	values(02, 'geografi');
 
-select * from Tutor_Qualification;
-
 
 insert into Course_Type (id, name)
 	values (01, 'dansk 1');
@@ -123,8 +107,6 @@ insert into Course_Type (id, name)
 
 insert into Course_Type (id, name)
 	values (03, 'spansk 3');
-
-select * from Course_Type;
 
 
 insert into Course (id, course_type_id, name, price, difficulty)
@@ -136,13 +118,9 @@ insert into Course (id, course_type_id, name, price, difficulty)
 insert into Course (id, course_type_id, name, price, difficulty)
 	values (03, 01, 'Dansk 1', 200.00, 1);
 
-select * from Course;
-
 
 insert into Course_Requirement (course_id, required_course)
 	values(02, 49);
-
-select * from Course_Requirement;
 
 
 insert into Course_Tutor (tutor_id, course_id)
@@ -161,3 +139,45 @@ insert into Participant (person_id, work_condition)
 
 insert into Participant (person_id, work_condition)
 	values (06, 'i arbejde');
+
+
+insert into table Participant_Passed_Course (participant_id, passed_course)
+	values (04, 01);
+	
+insert into table Participant_Passed_Course (participant_id, passed_course)
+	values (05, 02);
+
+insert into table Participant_Passed_Course (participant_id, passed_course)
+	values (06, 03);
+
+
+insert into Class_Room (id, name, number_of_seats)
+	values (01, 'b132', 50);
+	
+insert into Class_Room (id, name, number_of_seats)
+	values (02, 'a128', 50);
+	
+insert into Class_Room (id, name, number_of_seats)
+	values (03, '203', 50);
+
+
+insert into Class (id, name, class_room_id, person_id, course_id, start_date, end_date)
+	values (01, 'MAT', 03, 02, 01, 2012-09-21, 2012-12-21);
+	
+	insert into Class (id, name, class_room_id, person_id, course_id, start_date, end_date)
+	values (02, '3S', 02, 02, 02, 2012-10-14, 2013-01-26);
+	
+	insert into Class (id, name, class_room_id, person_id, course_id, start_date, end_date)
+	values (03, '1D', 01, 02, 03, 2012-07-21, 2012-10-01);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
