@@ -171,13 +171,42 @@ insert into Class (id, name, class_room_id, person_id, course_id, start_date, en
 	values (03, '1D', 01, 02, 03, 2012-07-21, 2012-10-01);
 	
 	
+insert into Participant_Class (class_id, participant_id, graduated, grade)
+	values (01, 04, true, 07);
+	
+insert into Participant_Class (class_id, participant_id, graduated, grade)
+	values (02, 05, true, 04);
+	
+insert into Participant_Class (class_id, participant_id, graduated, grade)
+	values (03, 06, true, 10);
 	
 	
+insert into Pending (id, person_id, course_id)
+	values (01, 04, 03);
+	
+insert into Pending (id, person_id, course_id)
+	values (02, 06, 01);
+	
+insert into Pending (id, person_id, course_id)
+	values (03, 05, 02);
 	
 	
+insert into Participant_Invoice (id, participant_id, total, paid)
+	values (01, 04, 250.00, true);
 	
+insert into Participant_Invoice (id, participant_id, total, paid)
+	values (02, 05, 230.50, false);
 	
+insert into Participant_Invoice (id, participant_id, total, paid)
+	values (03, 06, 200.00, true);
 	
+
+insert into Participant_Invoiceline (participant_invoice_id, course_id, subtotal)
+	values (01, 01, 250.00);
 	
+insert into Participant_Invoiceline (participant_invoice_id, course_id, subtotal)
+	values (02, 02, 230.50);
 	
+insert into Participant_Invoiceline (participant_invoice_id, course_id, subtotal)
+	values (03, 03, 200.00);
 	
