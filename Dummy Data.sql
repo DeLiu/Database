@@ -108,3 +108,16 @@ insert into Course (id, course_type_id, name, price, difficulty)
 select * from Course;
 
 
+insert into Course_Requirement (course_id, required_course)
+	values(02, 49);
+
+select * from Course_Requirement;
+
+
+insert into Course_Tutor (tutor_id, course_id)
+	values(02, 01);
+
+insert into Course_Tutor (tutor_id, course_id)
+	values(02, 03);
+
+select * from Course_Tutor;
