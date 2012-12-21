@@ -1,19 +1,41 @@
 insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
 	values (01, 1410921713, 'Niko', 'Enderman', 'Derpvej', 69, 6600, 'Æblerød');
+
 insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
 	values (02, 2112121502, 'Pia', 'Jacobsen', 'Jernbanegade', 13, 7160, 'Tørring');
+
 insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
-	values (03, 231163, 'John', 'Smith', 'Tardisvej', 11, 6600, 'Æblerød');
+	values (03, 2310813497, 'John', 'Smith', 'Tardisvej', 60, 6600, 'Æblerød');
+
+insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
+	values (04, 2810613222, 'William', 'Mortensen', 'Hellovej', 71, 7000, 'Fredericia');
+
+insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
+	values (05, 2201410889, 'Jens', 'Hansen', 'Worldvej', 22, 6000, 'Kolding');
+
+insert into Person (id, cpr, firstname, lastname, street, house_number, postal, city)
+	values (06, 2010280055, 'Sofie', 'Uglemose', 'Herpvej', 38, 7100, 'Vejle');
 
 select * from Person;
 
 
 insert into Person_Phone (person_id, phone)
 	values (01, 20811393);
+
 insert into Person_Phone (person_id, phone)
 	values (02, 31922404);
+
 insert into Person_Phone (person_id, phone)
 	values (03, 36257794);
+
+insert into Person_Phone (person_id, phone)
+	values (04, 44568534);
+
+insert into Person_Phone (person_id, phone)
+	values (05, 34786734);
+
+insert into Person_Phone (person_id, phone)
+	values (06, 76887942);
 
 select * from Person_Phone;
 
@@ -26,6 +48,15 @@ insert into Person_Email (person_id, email)
 
 insert into Person_Email (person_id, email)
 	values (03, 'doctor@tardis.com');
+
+insert into Person_Email (person_id, email)
+	values (04, 'sexyb1tch69@aol.com');
+
+insert into Person_Email (person_id, email)
+	values (05, 'fuuuuu@mail.dk');
+
+insert into Person_Email (person_id, email)
+	values (06, 'sofie43556@gmail.com');
 
 select * from Person_Email;
 
@@ -121,3 +152,12 @@ insert into Course_Tutor (tutor_id, course_id)
 	values(02, 03);
 
 select * from Course_Tutor;
+
+insert into Participant (person_id, work_condition)
+	values (04, 'pentionist');
+
+insert into Participant (person_id, work_condition)
+	values (05, 'arbejdsløs');
+
+insert into Participant (person_id, work_condition)
+	values (06, 'i arbejde');
